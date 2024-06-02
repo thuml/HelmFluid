@@ -1,0 +1,21 @@
+python exp_z500.py \
+  --data-path /data/z500/ \
+  --ntrain 100 \
+  --ntest 5000 \
+  --in_dim 2 \
+  --out_dim 1 \
+  --dataset_name z500_era5 \
+  --h 72 \
+  --w 144 \
+  --h-down 1 \
+  --w-down 1 \
+  --T-in 2 \
+  --T-out 10 \
+  --batch-size 5 \
+  --learning-rate 0.0005 \
+  --model HelmFluid_2D_corr_potential \
+  --d-model 64 \
+  --patch-size 5,9 \
+  --padding 0,8 \
+  --model-save-path ./results/z500 \
+  --model-save-name helmfluid_z500_{}.pt

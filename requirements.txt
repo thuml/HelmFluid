@@ -1,0 +1,10 @@
+torch
+matplotlib
+scipy
+h5py
+tensorboard
+netCDF4
+torchvision
+einops
+functorch
+cupy-cuda117

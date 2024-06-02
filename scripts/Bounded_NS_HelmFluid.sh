@@ -1,0 +1,22 @@
+python exp_fluid_boundary_128.py \
+  --data-path /data/boundary/ \
+  --ntrain 1000 \
+  --ntest 200 \
+  --in_dim 10 \
+  --out_dim 1 \
+  --dataset_name boundary \
+  --h 128 \
+  --w 128 \
+  --h-down 1 \
+  --w-down 1 \
+  --T-in 10 \
+  --T-out 10 \
+  --groups 4 \
+  --batch-size 5 \
+  --learning-rate 0.0005 \
+  --model HelmNet_2D_corr_potential_boundary_128 \
+  --d-model 64 \
+  --patch-size 4,4 \
+  --padding 0,0 \
+  --model-save-path ./results/boundary \
+  --model-save-name helmfluid_boundary_{}.pt

@@ -1,0 +1,22 @@
+python exp_sea.py \
+  --data-path /data/sea/ \
+  --ntrain 100 \
+  --ntest 5000 \
+  --in_dim 10 \
+  --out_dim 1 \
+  --dataset_name sea_temperature \
+  --h 64 \
+  --w 64 \
+  --h-down 1 \
+  --w-down 1 \
+  --T-in 10 \
+  --T-out 10 \
+  --groups 4 \
+  --batch-size 5 \
+  --learning-rate 0.0005 \
+  --model HelmNet_2D_corr_potential_sea \
+  --d-model 64 \
+  --patch-size 4,4 \
+  --padding 0,0 \
+  --model-save-path ./results/sea \
+  --model-save-name helmfluid_sea_{}.pt
