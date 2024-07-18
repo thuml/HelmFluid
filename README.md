@@ -35,7 +35,16 @@ Inspired by the Helmholtz theorem, we propose HelmFluid to learn curl-free and d
 pip install -r requirements.txt
 ```
 
-2. Data preparation. We will release all the data download links here soon.
+2. Data preparation.
+Download the datasets from the following links and put them under the folder `./data/`.
+
+| Dataset         | Task                           |  Link                                                        |
+|-----------------|--------------------------------| ----------------------------------------------------------- |
+| Navier-Stokes   | Predict future fluid vorticity | [[Google Cloud]](https://drive.google.com/drive/folders/1UnbQh2WWc6knEHbLn-ZaXrKUZhp7pjt-) |
+| Bounded N-S     | Predict future color           | [[Google Cloud]](https://drive.google.com/drive/folders/127ki3Oo8xt1KVfjgtsRqeuf853jgf98E) |
+| ERA5 Z500       | Predict future geopotential    | [[Google Cloud]](https://drive.google.com/drive/folders/127ki3Oo8xt1KVfjgtsRqeuf853jgf98E) |
+| Sea Temperature | Predict future sea temperature | [[Google Cloud]](https://drive.google.com/drive/folders/127ki3Oo8xt1KVfjgtsRqeuf853jgf98E) |
+| Spreading Ink   | Predict future fluid video     | [[Google Cloud]](https://drive.google.com/file/d/1kCX2NF4IMtB2IC_xZPfrrnR2uiV83zRC/view) |
 
 3. Train and evaluate model. We provide the experiment scripts of all benchmarks under the folder `./scripts/`. You can reproduce the experiment results as the following examples:
 ```bash
